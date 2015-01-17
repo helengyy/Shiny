@@ -6,7 +6,10 @@ shinyUI(pageWithSidebar(
     numericInput('height', h4('Height(cm/in)'), 0,min=0,max=250,step=1),
     numericInput('weight', h4('Weight(kg/lbs)'),0,min=0,max=250,step=1),
     submitButton('Submit'),
-    a("help",href="help.html")
+    p("BMI (Body Mass Index) is a measurement of body fat based on height and weight that applies to both men and women between the ages of 18 and 65 years."),
+    p("1. Select which measurement system you use"),
+    p("2. Input height and weight"),
+    p("3. Click submit")
   ),
   mainPanel(
     h4('Result'),
